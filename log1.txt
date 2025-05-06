@@ -1,0 +1,10 @@
+全局模型已保存到: ./save/FL/local_models/cifar_resnet18_25_10_1.0_202541904252_0.pkl
+全局模型已保存到: ./save/FL/global_models/cifar_resnet18_25_10_1.0_202541904252_0.pkl
+全局模型已保存到: ./save/FL/local_models/cifar_resnet18_25_10_1.0_202541904252_1.pkl
+Traceback (most recent call last):
+  File "/root/autodl-tmp/federated-learning-2.19/federated-learning/FL.py", line 290, in <module>
+    save_models(global_model_each_epoch, './save/FL/global_models/', args, i) # 保存每个epoch的所有全局模型
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/federated-learning-2.19/federated-learning/utils/info.py", line 55, in save_models
+    pickle.dump(group_dict, f)
+OSError: [Errno 28] No space left on device
